@@ -23,3 +23,8 @@ To understand Magic Method you have to know about the different storage types. M
 
 
 ![Bedrock.dev Example](https://user-images.githubusercontent.com/82107846/213821855-62a974d6-bee3-41bd-8a47-c4ae367b0139.png)
+
+Go to your ```player.entity.json``` file in your workspace, if you don't already have one extract it from the base vanilla resource pack [here](https://aka.ms/resourcepacktemplate). It is in the folder entity, and will need to put in another folder with the name of entity.
+
+Inside the file you will want to look for ```pre_animation```
+![Example 2](https://user-images.githubusercontent.com/82107846/213822128-1c5b781f-e7bc-4416-a8bd-d0832ba9b7ee.png)
