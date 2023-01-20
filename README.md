@@ -38,3 +38,5 @@ In the render controller folder, there are many different render controllers. Yo
 
 > **Warning**
 > Make sure you use proper syntax. Every line must end with a ```;```. If you are using this in the textures area, you must add ```return Texture.[whatevertexture]```.
+
+Now once you assign this to value, you can use ```temp.my_first_mm_test``` as any other variable, and render things on your screen.
