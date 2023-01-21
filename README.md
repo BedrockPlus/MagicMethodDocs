@@ -21,21 +21,40 @@ Magic Method is a method created by [Chainsketch](https://www.youtube.com/@Chain
 ## To understand Magic Method....
 To understand Magic Method you have to know about the different storage types. Most often you will see ```variable``` being used but other things like ```temp``` and ```context``` exist. For magic method you need to use ```temp```, as it directly writes to the game's storage.
 
+| Name | Description |
+| --- | --- |
+| `variable.variable_name` | Read/write storage on an actor |
+| `temp.variable_name` | Read/write temporary storage |
+| `context.variable_name` | Read-only storage provided by the game in certain scenarios |
 
-![Bedrock.dev Example](https://user-images.githubusercontent.com/82107846/213821855-62a974d6-bee3-41bd-8a47-c4ae367b0139.png)
 
 Go to your ```whatever.entity.json``` file in your workspace, if you don't already have one extract it from the base vanilla resource pack [here](https://aka.ms/resourcepacktemplate). It is in the folder entity, and will need to put in another folder with the name of entity.
 
 Inside the file you will want to look for ```pre_animation```
 
-![Example 2](https://user-images.githubusercontent.com/82107846/213822128-1c5b781f-e7bc-4416-a8bd-d0832ba9b7ee.png)
+````JSON
+"pre_animation": [
+    "temp.my_first_mm_test = temp.my_first_mm_test ?? -1",
+]
+````
 
 This is very important when using Temp leaking / Magic Method when the temp has no value in game storage it will set it as -1 this (if you dont do this you wont be able to test for temps in most places sense molang will just treat it as an error)
 
 ## Render Controller Leaks
 In the render controller folder, there are many different render controllers. You can go into the folder and find a file that is linked to the player entity. Inside different attributes like the textures or overlay colors you can actually set up variables. Here is an example:
 
-![Example 3](https://user-images.githubusercontent.com/82107846/213823129-fd5e3dcd-0ca9-49c3-aee1-099c0c89f060.png)
+````JSON
+"controller.render.player.third_person": {
+    "geometry": "Geometry.default",
+    "materials": [
+        {
+            "*": "Material.default"
+        }
+    ],
+    "textures": [
+        "temp.my_first_mm_test = query.distance_from_camera; return Texture.default;"
+    ],
+````
 
 > **Warning**
 > Make sure you use proper syntax. Every line must end with a ```;```. If you are using this in the textures area, you must add ```return Texture.[whatevertexture];```.
