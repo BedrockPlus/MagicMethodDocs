@@ -62,7 +62,7 @@ In the render controller folder, there are many different render controllers. Yo
 Now once you assign this to value, you can use ```temp.my_first_mm_test``` as any other variable, and render things on your screen.
 
 ## Example Pack
-If you don't understand packs or can't understand this guide we have an example pack. This pack tells you the distance from the closest player with an iron sword.
+If you don't understand packs or can't understand this guide we have an example pack. This pack tells you the distance from the closest player with an iron sword. Please don't use this on Hive's Murder Mystery as this would technically be a hack.
 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 
