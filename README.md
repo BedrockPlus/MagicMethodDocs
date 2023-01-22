@@ -4,7 +4,7 @@
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
 ## What is Magic Method?
-Magic Method is a method created by [Chainsketch](https://www.youtube.com/@Chainsketch) that allows you to access anything in the game. This allows you to make many mods, as magic method allows you to transfer data between other players mobs and particles.
+Magic Method is a method created by [Chainsketch](https://www.youtube.com/@Chainsketch) that allows you to access anything in the game. This allows you to make many mods, as magic method allows you to transfer data between other players, mobs, and particles.
 
 ## Pros/Cons of Magic Method
 ✅ Pros:
