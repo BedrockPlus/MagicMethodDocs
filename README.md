@@ -67,6 +67,7 @@ Now once you assign this to value, you can use ```temp.my_first_mm_test``` as an
 ## Example Pack
 If you don't understand packs or can't understand this guide we have an example pack. This pack tells you the distance from the closest player with an iron sword. Please don't use this on Hive's Murder Mystery as this would technically be a hack.
 
+[Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
 ## Block Detection
@@ -95,7 +96,6 @@ Then make the particle start an event when it expires.
 ````
 Then make the particle leak a temp that can be tested for by the entity.
 
-[Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 
 ## Special Credits
 Documentation made by [White](https://github.com/WhiteOnGitHub) and by [chyves](https://github.com/notchyves)!
