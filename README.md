@@ -69,6 +69,28 @@ If you don't understand packs or can't understand this guide we have an example 
 
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
+##Block Detection
+If you wanna be able to detect blocks around an entity with magic method you can use particles.
+```JSON
+"minecraft:particle_expire_if_in_blocks" [
+    // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
+    // these are typically the same name as in the /setblock command
+    // except for the minecraft: prefix
+    "blockname1",
+    "blockname2", 
+    ...
+],```
+Make the particle expire when it's in a block like so.
+```JSON
+"minecraft:emitter_lifetime_events": {
+      "expiration_event": "stop"
+}```
+Then make the particle start an event when it expires.
+```JSON
+"stop":{
+  "expression":"temp.yourtemp = 1;"
+}```
+Then make the particle leak a temp that can be tested for by the entity.
 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 
