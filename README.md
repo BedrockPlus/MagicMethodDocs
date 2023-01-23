@@ -71,8 +71,8 @@ If you don't understand packs or can't understand this guide we have an example 
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
 ## Block Detection
-If you wanna be able to detect blocks around an entity with magic method you can use particles.
-````JSON
+If you want to be able to detect blocks around an entity with magic method you can use particles.
+````json
 "minecraft:particle_expire_if_in_blocks" [
     // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
     // these are typically the same name as in the /setblock command
@@ -82,20 +82,20 @@ If you wanna be able to detect blocks around an entity with magic method you can
     ...
 ],
 ````
-Make the particle expire when it's in a block like so.
-```JSON
+Now that you have set this code up, you need to tell the particle what to do if it expires. So, you will need to write this.
+```json
 "minecraft:emitter_lifetime_events": {
       "expiration_event": "stop"
 }
 ````
-Then make the particle start an event when it expires.
-```JSON
+This is the code that writes the value to the temp. So if it detects the block, it runs something that changes the temp value.
+```json
 "stop":{
-  "expression":"temp.yourtemp = 1;"
+  "expression": "temp.yourtemp = 1;"
 }
 ````
-Then make the particle leak a temp that can be tested for by the entity.
 
+### Example Pack Coming Soon!
 
 ## Special Credits
 Documentation made by [White](https://github.com/WhiteOnGitHub) and by [chyves](https://github.com/notchyves)!
