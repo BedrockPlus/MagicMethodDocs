@@ -3,7 +3,7 @@
 > **Warning**
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
-## What is Magic Method?
+## <img width="16" height="16" src="images/magic_method.png"/>   What is Magic Method?
 Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. This allows you to make many mods, as magic method allows you to transfer data between other players, mobs, and particles.
 
 > **Note**
@@ -70,7 +70,7 @@ If you don't understand packs or can't understand this guide we have an example 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
-## Block Detection
+## <img width="16" height="16" src="images/block_detection.png"/>  Block Detection
 If you wanna be able to detect blocks around an entity with magic method you can use particles.
 ````JSON
 "minecraft:particle_expire_if_in_blocks" [
