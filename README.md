@@ -99,7 +99,7 @@ This is the code that writes the value to the temp. So if it detects the block, 
 
 ## Special Credits
 Documentation made by [White](https://github.com/WhiteOnGitHub) and [chyves](https://github.com/notchyves)!
-Edited by xStormy[https://github.com/xstormyy]
+Edited by [xStormy](https://github.com/xstormyy)
 
 
 ### You can use the example pack, but do not steal contents and claim it as yours. Also feel free to use this documentation however you like, but just do not claim it.
