@@ -70,6 +70,9 @@ If you don't understand packs or can't understand this guide we have an example 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
+## ✨ Particle Leaking
+This is similar to render controller leaking but this is more recommended and you can more accurately choose who you want to get data from. More coming soon....
+
 ## 🧱 Block Detection
 If you want to be able to detect blocks around an entity with magic method you can use particles.
 ````json
