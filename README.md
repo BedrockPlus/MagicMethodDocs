@@ -4,7 +4,7 @@
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
 ## 🔮 What is Magic Method?
-Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. This allows you to make many mods, as magic method allows you to transfer data between other players, mobs, and particles.
+Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. This is also known as temp leaking. This allows you to make many mods, as magic method allows you to transfer data between other players, mobs, and particles.
 
 > **Note**
 > We want to credit Chainsketch in everyway possible, so please check out his [YouTube](https://www.youtube.com/@Chainsketch), [Discord](https://dsc.gg/chainsketch), and [Twitter](https://twitter.com/Chainsketch_)!
