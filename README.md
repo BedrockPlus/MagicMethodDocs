@@ -3,7 +3,7 @@
 > **Warning**
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
-## What is Magic Method?
+## 🔮 What is Magic Method?
 Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. This allows you to make many mods, as magic method allows you to transfer data between other players, mobs, and particles.
 
 > **Note**
@@ -21,7 +21,7 @@ Magic Method is a method created by Chainsketch that allows you to exchange data
  - It is difficult to learn.
  - It will spontaneously break without much warning.
 
-## To understand Magic Method....
+## 🤔 To understand Magic Method....
 To understand Magic Method you have to know about the different storage types. Most often you will see ```variable``` being used but other things like ```temp``` and ```context``` exist. For magic method you need to use ```temp```, as it directly writes to the game's storage.
 
 | Name | Description |
@@ -43,7 +43,7 @@ Inside the file you will want to look for ```pre_animation```
 
 This is very important when using Temp leaking / Magic Method when the temp has no value in game storage it will set it as -1 this (if you dont do this you wont be able to test for temps in most places sense molang will just treat it as an error)
 
-## Render Controller Leaks
+## 💧 Render Controller Leaks
 In the render controller folder, there are many different render controllers. You can go into the folder and find a file that is linked to the player entity. Inside different attributes like the textures or overlay colors you can actually set up variables. Here is an example:
 
 ````JSON
@@ -64,13 +64,13 @@ In the render controller folder, there are many different render controllers. Yo
 
 Now once you assign this to value, you can use ```temp.my_first_mm_test``` as any other variable, and render things on your screen.
 
-## Example Pack
+## 🌍 Example Pack
 If you don't understand packs or can't understand this guide we have an example pack. This pack tells you the distance from the closest player with an iron sword. Please don't use this on Hive's Murder Mystery as this would technically be a hack.
 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
 ![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
 
-## Block Detection
+## 🧱 Block Detection
 If you want to be able to detect blocks around an entity with magic method you can use particles.
 ````json
 "minecraft:particle_expire_if_in_blocks" [
@@ -95,9 +95,9 @@ This is the code that writes the value to the temp. So if it detects the block, 
 }
 ````
 
-### Example Pack Coming Soon!
+### 🌍 Example Pack Coming Soon!
 
-## Special Credits
+## 📜 Special Credits
 Documentation made by [White](https://github.com/WhiteOnGitHub) and [chyves](https://github.com/notchyves)!
 Edited by [xStormy](https://github.com/xstormyy)
 
