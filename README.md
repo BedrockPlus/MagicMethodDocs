@@ -73,7 +73,7 @@ If you don't understand packs or can't understand this guide we have an example 
 ## ✨ Particle Leaking
 This is similar to render controller leaking but this is more recommended and you can more accurately choose who you want to get data from. More coming soon....
 
-## 🧱 Block Detection
+### Block Detection
 If you want to be able to detect blocks around an entity with magic method you can use particles.
 ````json
 "minecraft:particle_expire_if_in_blocks" [
