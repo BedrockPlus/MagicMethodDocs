@@ -11,7 +11,8 @@ Magic Method is a method created by Chainsketch that allows you to exchange data
 
 > We want to credit Chainsketch in everyway possible, so please check out his [YouTube](https://www.youtube.com/@Chainsketch), [Discord](https://dsc.gg/chainsketch), and [Twitter](https://twitter.com/Chainsketch_)!
 
-## Pros/Cons of Magic Method
+## Pros and Cons of Magic Method
+
 ✅ Pros:
  - You can access data from almost anywhere.
  - It is relatively easy to setup once you know what you are doing.
@@ -19,7 +20,7 @@ Magic Method is a method created by Chainsketch that allows you to exchange data
  - It isn't experimental like public variables.
  
 ❌ Cons:
- - Most servers have anticheats built in to stop you from accesing others data.
+ - Most servers have anticheats built in to stop you from accessing others data.
  - It is difficult to learn.
  - It will spontaneously break without much warning.
 
@@ -74,32 +75,39 @@ If you don't understand packs or can't understand this guide we have an example 
 [See Example Video](https://www.youtube.com/watch?v=QWpM0n392gg)
 
 ## ✨ Particle Leaking
+
 This is similar to render controller leaking but this is more recommended and you can more accurately choose who you want to get data from. More coming soon....
 
 ### Block Detection
+
 If you want to be able to detect blocks around an entity with magic method you can use particles.
-````json
+
+```json
 "minecraft:particle_expire_if_in_blocks" [
     // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
     // these are typically the same name as in the /setblock command
     // except for the minecraft: prefix
     "blockname1",
     "blockname2", 
-    ...
+    // So on so on...
 ],
-````
-Now that you have set this code up, you need to tell the particle what to do if it expires. So, you will need to write this.
+```
+
+Now that you have set this code up, you need to tell the particle what to do if it expires. So, you will need to write the following code:
+
 ```json
 "minecraft:emitter_lifetime_events": {
       "expiration_event": "stop"
 }
-````
+```
+
 This is the code that writes the value to the temp. So if it detects the block, it runs something that changes the temp value.
+
 ```json
 "stop":{
   "expression": "temp.yourtemp = 1;"
 }
-````
+```
 
 ### 🌍 Example Pack Coming Soon!
 
