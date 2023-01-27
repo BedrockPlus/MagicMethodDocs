@@ -1,6 +1,7 @@
 # Magic Method Documentation
 
-> **Warning**
+#### **Warning**
+
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
 ## 🔮 What is Magic Method?
