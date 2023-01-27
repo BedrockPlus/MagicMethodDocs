@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "This example pack was created by @chyves. See more:\nhttps://github.com/BedrockPlus/MagicMethodDocs",
+        "name": "Magic Method Test Pack",
+        "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 19, 0 ]
+    },
+    "modules": [
+        {
+            "description": "This example pack was created by @chyves. See more:\nhttps://github.com/BedrockPlus/MagicMethodDocs",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028819",
+            "version": [1, 0, 0]
+        }
+    ]
+}

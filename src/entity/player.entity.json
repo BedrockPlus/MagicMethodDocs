@@ -1,0 +1,192 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"materials": { // THESE ARE ALL THE MATERIALS THAT MAKE IT EASIER TO EDIT, DO NOT TOUCH!!!
+				"default": "entity_alphatest",
+				"cape": "entity_alphatest",
+				"animated": "player_animated",
+				"chyves_render": "chyves_render",
+				"chyves_icon": "chyves_icon"
+			},
+			"textures": { // THESE ARE ALL THE TEXTURES THAT CHANGE THE NUMBERS, DO NOT TOUCH!!!
+				"default": "textures/entity/steve",
+				"cape": "textures/entity/cape_invisible",
+				"iron_sword": "textures/items/iron_sword",
+				"blank": "textures/chyves/tui/blank",
+				"d1_num0": "textures/chyves/tui/numbers/1_0",
+				"d1_num1": "textures/chyves/tui/numbers/1_1",
+				"d1_num2": "textures/chyves/tui/numbers/1_2",
+				"d1_num3": "textures/chyves/tui/numbers/1_3",
+				"d1_num4": "textures/chyves/tui/numbers/1_4",
+				"d1_num5": "textures/chyves/tui/numbers/1_5",
+				"d1_num6": "textures/chyves/tui/numbers/1_6",
+				"d1_num7": "textures/chyves/tui/numbers/1_7",
+				"d1_num8": "textures/chyves/tui/numbers/1_8",
+				"d1_num9": "textures/chyves/tui/numbers/1_9",
+				"d2_num0": "textures/chyves/tui/numbers/2_0",
+				"d2_num1": "textures/chyves/tui/numbers/2_1",
+				"d2_num2": "textures/chyves/tui/numbers/2_2",
+				"d2_num3": "textures/chyves/tui/numbers/2_3",
+				"d2_num4": "textures/chyves/tui/numbers/2_4",
+				"d2_num5": "textures/chyves/tui/numbers/2_5",
+				"d2_num6": "textures/chyves/tui/numbers/2_6",
+				"d2_num7": "textures/chyves/tui/numbers/2_7",
+				"d2_num8": "textures/chyves/tui/numbers/2_8",
+				"d2_num9": "textures/chyves/tui/numbers/2_9",
+				"d3_num0": "textures/chyves/tui/numbers/3_0",
+				"d3_num1": "textures/chyves/tui/numbers/3_1",
+				"d3_num2": "textures/chyves/tui/numbers/3_2",
+				"d3_num3": "textures/chyves/tui/numbers/3_3",
+				"d3_num4": "textures/chyves/tui/numbers/3_4",
+				"d3_num5": "textures/chyves/tui/numbers/3_5",
+				"d3_num6": "textures/chyves/tui/numbers/3_6",
+				"d3_num7": "textures/chyves/tui/numbers/3_7",
+				"d3_num8": "textures/chyves/tui/numbers/3_8",
+				"d3_num9": "textures/chyves/tui/numbers/3_9",
+				"d4_num0": "textures/chyves/tui/numbers/4_0",
+				"d4_num1": "textures/chyves/tui/numbers/4_1",
+				"d4_num2": "textures/chyves/tui/numbers/4_2",
+				"d4_num3": "textures/chyves/tui/numbers/4_3",
+				"d4_num4": "textures/chyves/tui/numbers/4_4",
+				"d4_num5": "textures/chyves/tui/numbers/4_5",
+				"d4_num6": "textures/chyves/tui/numbers/4_6",
+				"d4_num7": "textures/chyves/tui/numbers/4_7",
+				"d4_num8": "textures/chyves/tui/numbers/4_8",
+				"d4_num9": "textures/chyves/tui/numbers/4_9",
+				"d5_num0": "textures/chyves/tui/numbers/5_0",
+				"d5_num1": "textures/chyves/tui/numbers/5_1",
+				"d5_num2": "textures/chyves/tui/numbers/5_2",
+				"d5_num3": "textures/chyves/tui/numbers/5_3",
+				"d5_num4": "textures/chyves/tui/numbers/5_4",
+				"d5_num5": "textures/chyves/tui/numbers/5_5",
+				"d5_num6": "textures/chyves/tui/numbers/5_6",
+				"d5_num7": "textures/chyves/tui/numbers/5_7",
+				"d5_num8": "textures/chyves/tui/numbers/5_8",
+				"d5_num9": "textures/chyves/tui/numbers/5_9",
+				"d6_num0": "textures/chyves/tui/numbers/6_0",
+				"d6_num1": "textures/chyves/tui/numbers/6_1",
+				"d6_num2": "textures/chyves/tui/numbers/6_2",
+				"d6_num3": "textures/chyves/tui/numbers/6_3",
+				"d6_num4": "textures/chyves/tui/numbers/6_4",
+				"d6_num5": "textures/chyves/tui/numbers/6_5",
+				"d6_num6": "textures/chyves/tui/numbers/6_6",
+				"d6_num7": "textures/chyves/tui/numbers/6_7",
+				"d6_num8": "textures/chyves/tui/numbers/6_8",
+				"d6_num9": "textures/chyves/tui/numbers/6_9",
+				"negative": "textures/chyves/tui/numbers/negative"
+			},
+			"geometry": { // DO NOT EDIT THIS EITHER VERY IMPORTANT
+				"default": "geometry.humanoid.custom",
+				"cape": "geometry.cape",
+				"chyves_mm_numbers": "geometry.chyves_mm_numbers",
+				"chyves_murder_icon": "geometry.chyves_murder_icon"
+			},
+			"scripts": {
+				"scale": "0.9375",
+				"initialize": [
+					"variable.is_holding_right = 0.0;",
+					"variable.is_blinking = 0.0;",
+					"variable.last_blink_time = 0.0;",
+					"variable.hand_bob = 0.0;"
+				],
+				"pre_animation": [
+					"temp.my_first_mm_test = temp.my_first_mm_test ?? -1;",
+					// This above starts magic method. You must write it just like this or it will break.
+					"variable.helmet_layer_visible = 1.0;",
+					"variable.leg_layer_visible = 1.0;",
+					"variable.boot_layer_visible = 1.0;",
+					"variable.chest_layer_visible = 1.0;",
+					"variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+					"variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+					"variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+					"variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+					"variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+					"variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+				],
+				"animate": [
+					"root",
+					"chyves_murder_icon" // this doesn't have anything to do with magic method
+					// this just renders the sword above the head
+				]
+			},
+			"animations": {
+				"chyves_murder_icon": "animation.chyves_murder_icon",
+				"root": "controller.animation.player.root",
+				"base_controller": "controller.animation.player.base",
+				"hudplayer": "controller.animation.player.hudplayer",
+				"humanoid_base_pose": "animation.humanoid.base_pose",
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"look_at_target_ui": "animation.player.look_at_target.ui",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"look_at_target_inverted": "animation.player.look_at_target.inverted",
+				"cape": "animation.player.cape",
+				"move.arms": "animation.player.move.arms",
+				"move.legs": "animation.player.move.legs",
+				"swimming": "animation.player.swim",
+				"swimming.legs": "animation.player.swim.legs",
+				"riding.arms": "animation.player.riding.arms",
+				"riding.legs": "animation.player.riding.legs",
+				"holding": "animation.player.holding",
+				"brandish_spear": "animation.humanoid.brandish_spear",
+				"holding_spyglass": "animation.humanoid.holding_spyglass",
+				"charging": "animation.humanoid.charging",
+				"attack.positions": "animation.player.attack.positions",
+				"attack.rotations": "animation.player.attack.rotations",
+				"sneaking": "animation.player.sneaking",
+				"bob": "animation.player.bob",
+				"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+				"bow_and_arrow": "animation.humanoid.bow_and_arrow",
+				"use_item_progress": "animation.humanoid.use_item_progress",
+				"skeleton_attack": "animation.skeleton.attack",
+				"sleeping": "animation.player.sleeping",
+				"first_person_base_pose": "animation.player.first_person.base_pose",
+				"first_person_empty_hand": "animation.player.first_person.empty_hand",
+				"first_person_swap_item": "animation.player.first_person.swap_item",
+				"first_person_shield_block": "animation.player.first_person.shield_block",
+				"first_person_attack_controller": "controller.animation.player.first_person_attack",
+				"first_person_attack_rotation": "animation.player.first_person.attack_rotation",
+				"first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation",
+				"first_person_walk": "animation.player.first_person.walk",
+				"first_person_map_controller": "controller.animation.player.first_person_map",
+				"first_person_map_hold": "animation.player.first_person.map_hold",
+				"first_person_map_hold_attack": "animation.player.first_person.map_hold_attack",
+				"first_person_map_hold_off_hand": "animation.player.first_person.map_hold_off_hand",
+				"first_person_map_hold_main_hand": "animation.player.first_person.map_hold_main_hand",
+				"first_person_crossbow_equipped": "animation.player.first_person.crossbow_equipped",
+				"third_person_crossbow_equipped": "animation.player.crossbow_equipped",
+				"third_person_bow_equipped": "animation.player.bow_equipped",
+				"crossbow_hold": "animation.player.crossbow_hold",
+				"crossbow_controller": "controller.animation.player.crossbow",
+				"shield_block_main_hand": "animation.player.shield_block_main_hand",
+				"shield_block_off_hand": "animation.player.shield_block_off_hand",
+				"blink": "controller.animation.persona.blink",
+				"tooting_goat_horn": "animation.humanoid.tooting_goat_horn"
+			},
+			"render_controllers": [
+				{
+					"controller.render.player.first_person": "variable.is_first_person"
+				},
+				{
+					"controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon"
+				},
+				{
+					"controller.render.player.map": "variable.map_face_icon"
+				},
+				{
+					"controller.render.chyves_iron_sword": "(q.is_item_name_any('slot.hotbar', 0, 'minecraft:iron_sword') + q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 1, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 2, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 3, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 4, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 5, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 6, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 7, 'minecraft:iron_sword') + q.is_item_name_any('slot.hotbar', 8, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 0, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 1, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 2, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 3, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 4, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 5, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 6, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 7, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 8, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 9, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 10, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 11, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 12, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 13, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 14, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 15, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 16, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 17, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 18, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 19, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 20, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 21, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 22, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 23, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 24, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 25, 'minecraft:iron_sword') + q.is_item_name_any('slot.inventory', 26, 'minecraft:iron_sword'))"
+					/* This renders the iron sword above the murderers head.
+					This also determines the number that will be rendered in the next render controller.*/
+				},
+				{
+					"controller.render.chyves_murder_numbers": "variable.is_paperdoll"
+					/* This is the render controller that renders the number.*/
+				}
+			],
+			"enable_attachables": true
+		}
+	}
+}

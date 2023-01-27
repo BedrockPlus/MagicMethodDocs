@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.chyves_murder_icon": {
+            "loop": true,
+            "bones": {
+                "murder": {
+                    "position": [
+                        0,
+                        "50 + -query.distance_from_camera",
+                        0
+                    ],
+                    "rotation": [
+                        "-query.camera_rotation(0)",
+                        "180 + query.camera_rotation(1) + -query.body_y_rotation",
+                        0
+                    ],
+                    "scale": [
+                        "query.distance_from_camera/8 - 0.2 > 1 ? query.distance_from_camera/8 - 0.2 : 1",
+                        "query.distance_from_camera/8 - 0.2 > 1 ? query.distance_from_camera/8 - 0.2 : 1",
+                        1
+                    ]
+                }
+            }
+        }
+    }
+}

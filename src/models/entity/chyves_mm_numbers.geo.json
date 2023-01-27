@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.chyves_mm_numbers",
+				"texture_width": 39,
+				"texture_height": 7,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "chyves",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-10, 2007, -1],
+							"size": [39, 7, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [39, 7]},
+								"east": {"uv": [39, 0], "uv_size": [0, 0]},
+								"south": {"uv": [39, 7], "uv_size": [0, 0]},
+								"west": {"uv": [39, 0], "uv_size": [0, 0]},
+								"up": {"uv": [39, 0], "uv_size": [0, 0]},
+								"down": {"uv": [39, 0], "uv_size": [0, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+    "hud_content": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": [
+                    {
+                        "numbers": {
+                            "type": "custom",
+                            "renderer": "paper_doll_renderer",
+                            "size": [
+                                41,
+                                41
+                            ],
+                            "offset": [
+                                12,
+                                1961.4
+                            ],
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
