@@ -1,0 +1,67 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.chyves_iron_sword": {
+            "geometry": "geometry.chyves_murder_icon",
+            "materials": [
+                {
+                    "*": "material.chyves_icon"
+                }
+            ],
+            "textures": [
+                "temp.my_first_mm_test = query.distance_from_camera; return Texture.iron_sword;"
+                // this is the part that actually calculates the number
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "filter_lighting": true,
+            "ignore_lighting": true
+        },
+        "controller.render.chyves_murder_numbers": {
+            "geometry": "geometry.chyves_mm_numbers",
+            "materials": [
+                {
+                    "*": "material.chyves_render"
+                }
+            ],
+            "textures": [
+				"Texture.blank",
+                "array.d2[temp.my_first_mm_test]",
+                "array.d1[temp.my_first_mm_test/10]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.d1": [
+                        "Texture.d1_num0",
+                        "Texture.d1_num1",
+                        "Texture.d1_num2",
+                        "Texture.d1_num3",
+                        "Texture.d1_num4",
+                        "Texture.d1_num5",
+                        "Texture.d1_num6",
+                        "Texture.d1_num7",
+                        "Texture.d1_num8",
+                        "Texture.d1_num9"
+                    ],
+                    "array.d2": [
+                        "Texture.d2_num0",
+                        "Texture.d2_num1",
+                        "Texture.d2_num2",
+                        "Texture.d2_num3",
+                        "Texture.d2_num4",
+                        "Texture.d2_num5",
+                        "Texture.d2_num6",
+                        "Texture.d2_num7",
+                        "Texture.d2_num8",
+                        "Texture.d2_num9"
+                    ]
+                }
+            },
+            "is_hurt_color": {},
+            "on_fire_color": {}
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.chyves_murder_icon",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 6,
+                "visible_bounds_offset": [
+                    0,
+                    2,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "murder_base",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "name": "murder",
+                    "parent": "murder_base",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        16
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        8,
+                                        13
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        2
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        14,
+                                        13
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        2
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        12,
+                                        13
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        2
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        10,
+                                        11
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        2
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        12,
+                                        13
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        -2
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
