@@ -68,7 +68,7 @@ Now once you assign this to value, you can use ```temp.my_first_mm_test``` as an
 If you don't understand packs or can't understand this guide we have an example pack. This pack tells you the distance from the closest player with an iron sword. Please don't use this on Hive's Murder Mystery as this would technically be a hack.
 
 [Download Here](https://github.com/BedrockPlus/MagicMethodDocs/blob/main/MagicMethodPack.zip?raw=true)
-![image](https://user-images.githubusercontent.com/82107846/213875291-c43f3ad4-d091-41a7-9201-bcbb399cc6f2.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QWpM0n392gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## ✨ Particle Leaking
 This is similar to render controller leaking but this is more recommended and you can more accurately choose who you want to get data from. More coming soon....
