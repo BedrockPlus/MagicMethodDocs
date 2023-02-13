@@ -1,4 +1,4 @@
-# Magic Method Documentation
+# Magic Method Documentation 
 
 #### **Warning**
 
