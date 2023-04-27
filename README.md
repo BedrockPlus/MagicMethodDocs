@@ -5,7 +5,7 @@
 > We don't recommend you learning magic method if you don't have a basic understanding of Minecraft texture pack coding and how to edit entity files.
 
 ## 🔮 What is Magic Method?
-Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. This is also known as temp leaking. This allows you to make many mods as magic method allows you to transfer data between other players, mobs and particles.
+Magic Method is a method created by Chainsketch that allows you to exchange data in entity files in the game. The best, and the most commonly used method is temp leaking. This allows you to make many mods as magic method allows you to transfer data between other players, mobs and particles.
 
 #### **Note**
 
@@ -110,6 +110,10 @@ This is the code that writes the value to the temp. So if it detects the block, 
 ```
 
 ### 🌍 Example Pack Coming Soon!
+
+## Expiremental Ideas
+There might be a way to do Magic Method with just JSON UI. This would need you to display every single paperdoll in a game as it would show from their perspective. You can do this by changing the uuid of the paperdoll, and if you can make a grid getting all of their uuids it is technically possible.
+
 
 ## 📜 Special Credits
 Documentation made by [White](https://github.com/WhiteOnGitHub) and [chyves](https://github.com/notchyves) 
