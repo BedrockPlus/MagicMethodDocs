@@ -111,7 +111,7 @@ This is the code that writes the value to the temp. So if it detects the block, 
 
 ### 🌍 Example Pack Coming Soon!
 
-## Expiremental Ideas
+## Experimental Ideas
 There might be a way to do Magic Method with just JSON UI. This would need you to display every single paperdoll in a game as it would show from their perspective. You can do this by changing the uuid of the paperdoll, and if you can make a grid getting all of their uuids it is technically possible.
 
 
