@@ -82,8 +82,8 @@ This is similar to render controller leaking but this is more recommended and yo
 
 If you want to be able to detect blocks around an entity with magic method you can use particles.
 
-```json
-"minecraft:particle_expire_if_in_blocks" [
+```jsonc
+"minecraft:particle_expire_if_in_blocks": [
     // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
     // these are typically the same name as in the /setblock command
     // except for the minecraft: prefix
